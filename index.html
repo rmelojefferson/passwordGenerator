@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+</head>
+<body>
+    <div>
+        <h1>Password Generator</h1>
+        
+        <h2>Quantos caracteres?</h2>
+        
+        <form>
+            <label>8 caracters</label>
+            <input type="radio" class="passwordLength8" name="passwordLength" checked>
+            
+            <label>16 caracters</label>
+            <input type="radio" class="passwordLength16" name="passwordLength">
+        </form>
+        
+        <p id="newPassword">Clique no botão para gerar uma nova senha</p>
+        
+        <input id="bottonGenerator" type="button" value="Gerar senha" onclick="gerar()">
+        <div id="generatedPass"></div> <!--Quando clicar no botão, alterar para "Suas senhas:"-->
+    </div>
+    <script src="./passwordGenerator.js"></script>
+</body>
+</html>

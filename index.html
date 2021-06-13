@@ -12,17 +12,20 @@
         <h2>Quantos caracteres?</h2>
         
         <form>
-            <label>8 caracters</label>
-            <input type="radio" class="passwordLength8" name="passwordLength" checked>
-            
-            <label>16 caracters</label>
-            <input type="radio" class="passwordLength16" name="passwordLength">
+            <label>8 caracteres</label>
+            <input type="radio" id="passwordLength" name="passwordLength" checked>
+
+            <label>16 caracteres</label>
+            <input type="radio" class="passwordLength" name="passwordLength">
         </form>
         
-        <p id="newPassword">Clique no botão para gerar uma nova senha</p>
+        <p id="newPassword">Clique no botão para gerar uma nova senha:</p>
         
-        <input id="bottonGenerator" type="button" value="Gerar senha" onclick="gerar()">
-        <div id="generatedPass"></div> <!--Quando clicar no botão, alterar para "Suas senhas:"-->
+        <input id="newPassButton" type="button" value="Gerar senha" onclick="newPass()">
+
+        <p>Suas senhas:</p>
+
+        <p id="generatedPass"></p> <!--Quando clicar no botão, alterar para "Suas senhas:"-->
     </div>
     <script src="./passwordGenerator.js"></script>
 </body>

@@ -2,38 +2,27 @@ let caracteres = [0,1,2,3,4,5,6,7,8,9,'!','@','#','$','%','¨','&','*','(',')','
 
 let recebeSenha = '';
 let senha = '';
-let senhaGerada = document.getElementById("generatedPass");
 let novaSenha = document.getElementById("newPassword");
+let senhasGeradas = document.getElementById("generatedPass");
+let contador = '';
 
-function newPass(){
-    let check = document.getElementById("passwordLength").checked;
+function newPassButton(){
+    let check = document.getElementById("passwordLength").checked;    
+    var node = document.createElement("ul");
+    var senhaNode = document.createTextNode(recebeSenha);
+    node.appendChild(senhaNode);
     if(check==true){
-        pass8();
+        contador = 8;
     }else{
-        pass16();
+        contador = 16;
     }
-}
-function pass8(){
-    for(let c=0;c<8;c++){
+    recebeSenha= '';
+    for(let c=0;c<contador;c++){
         let randomCaracter = Math.floor(Math.random()*caracteres.length);
         //variável que armazena um número que representará um caractere do array caracteres.
         senha = caracteres[randomCaracter];    
         recebeSenha = senha+recebeSenha;
-    }
-    novaSenha.innerHTML = recebeSenha;    
-    senhaGerada.innerHTML = recebeSenha;
-
+    }    
+    novaSenha.innerHTML = `Sua nova senha:<br> ${recebeSenha}`;
+    senhasGeradas.appendChild(node);
 }
-function pass16(){    
-    for(let c=0;c<16;c++){
-        let randomCaracter = Math.floor(Math.random()*caracteres.length);
-        senha = caracteres[randomCaracter];    
-        recebeSenha = senha+recebeSenha;    
-    }
-    novaSenha.innerHTML = recebeSenha;
-    senhaGerada.innerHTML = recebeSenha;
-}
-
-/*
-- Precisa inserir quebra de linha a cada senha gerada no campo "Suas senhas"
-- Inserir a nova senha no lugar de "Clique no botão para gerar uma nova senha:" e fazer ele limpar cada vez que o botão for clicado novamente.*/

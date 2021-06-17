@@ -1,8 +1,10 @@
 let caracteres = `0123456789!@#$%¨&*abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'"()´{}[]~^?,.<>;/|+-`;
 
-let recebeSenha = '';
 let novaSenha = document.getElementById("newPassword");
 let senhasGeradas = document.getElementById("generatedPass");
+let botaoNovaSenha = document.getElementById("newPassButton");
+botaoNovaSenha.onclick = newPassButton;
+let recebeSenha = '';
 let contador = '';
 
 function newPassButton(){

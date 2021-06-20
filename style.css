@@ -11,13 +11,11 @@ body {
     text-align: center;
 }
 
-
 #principalDiv {
     background-color: #1E1F1F;
     border-radius: 20px;
     padding: 10px;
     max-width: 400px;
-    max-height: 400px;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -35,7 +33,7 @@ h1, h2, p{
     margin: 25px;
 }
 
-#newPassButton, #clean, #copy{
+#newPassButton, #clean, #copy, #newPassword{
     background-color:#121212;
     color: #DCDDDC ;
     border-radius: 50px;
@@ -47,15 +45,39 @@ h1, h2, p{
 }
 
 #newPassword{
-    background-color:#121212;
-    color: #DCDDDC;
-    border-radius: 50px;
-    border: 0;
-    padding: 7px;    
-    text-align: center;
+    width: 250px;
 }
 
 #newPassButton:hover, #clean:hover, #copy:hover{
     color: #ba86fd;
     font-weight: bolder;
 }
+
+@media screen and (max-width: 500px) {
+    h1{
+        font-size: 20px;
+    }
+
+    h2{
+        font-size: 15px;
+    }
+    
+    #buttons{
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center
+    }
+    input[type="radio"] {
+        margin: auto;
+    }
+
+    #newPassword{
+        margin-top: 20px;
+    }
+
+    #newPassButton, #clean, #copy{
+        margin-bottom: 15px;
+    }
+  }

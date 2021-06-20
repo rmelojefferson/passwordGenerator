@@ -8,26 +8,38 @@
 </head>
 <body>
     <div id="principalDiv">
-        <h1>Password Generator</h1>
+        <div>
+            <h1>Password Generator</h1>
         
-        <h2>Quantos caracteres?</h2>
-        
-        <form>
-            <label>8 caracteres</label>
-            <input type="radio" id="passwordLength" name="passwordLength" checked>
+            <h2>Quantos caracteres?</h2>
+        </div>
 
-            <label>16 caracteres</label>
-            <input type="radio" class="passwordLength" name="passwordLength">
-        </form>
-        <input id="newPassword" type="text" placeholder="Nova senha" inputmode="none">
-        <input id="copy" type="button" value="Copiar">
-        <p>Clique no botão para gerar uma nova senha:</p>
-        
-        <input id="newPassButton" type="button" value="Gerar senha">
-        <input id="clean" type="button" value="Limpar senhas">
+        <div>
+            <form>
+                <label for="passwordLength">8 caracteres</label>
+                <input type="radio" id="passwordLength" name="passwordLength"checked>
+                
 
-        <p id="suasSenhasButton"></p>
-        <ul id="generatedPass"></ul>
+                <label for="passwordLength16">16 caracteres</label>
+                <input type="radio" id="passwordLength16" name="passwordLength">
+                
+            </form>
+        </div>
+        
+        <div>
+            <input id="newPassword" type="text" placeholder="Nova senha" inputmode="none">
+            <input id="newPassButton" type="button" value="Gerar senha">
+        </div>    
+
+        <div>
+            <input id="copy" type="button" value="Copiar">
+            <input id="clean" type="button" value="Limpar senhas">
+        </div>
+
+        <div>
+            <p id="suasSenhasButton"></p>
+            <ul id="generatedPass"></ul>
+        </div>
     </div>
         
     <script src="./passwordGenerator.js"></script>

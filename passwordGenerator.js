@@ -6,15 +6,14 @@ let contador = '';
 let senhasGeradas = document.getElementById("generatedPass");
 let botaoNovaSenha = document.getElementById("newPassButton");
     botaoNovaSenha.onclick = newPassButton;
-
 let limpaSenha = document.getElementById("clean");
     limpaSenha.onclick = cleanButton;
 
 function newPassButton(){
     let check = document.getElementById("passwordLength").checked;    
-    var senhaNode = document.createTextNode(recebeSenha);
-    var node = document.createElement("ul");
-        node.appendChild(senhaNode);
+    //var senhaNode = document.createTextNode(recebeSenha); - Tirando função para teste
+    //var node = document.createElement("ul"); - Tirando função para teste
+      //  node.appendChild(senhaNode); - Tirando função para teste
     if(check==true){
         contador = 8;
     }else{
@@ -32,8 +31,8 @@ function newPassButton(){
         novaSenha.value = recebeSenha;
         novaSenha.style.color = "#ba86fd";
     
-        senhasGeradas.appendChild(node);
-        document.getElementById("suasSenhasButton").innerText = "Suas senhas:";
+        //senhasGeradas.appendChild(node); - Tirando função para teste
+        //document.getElementById("suasSenhasButton").innerText = "Suas senhas:"; - Tirando função para teste
     
     let copyPass = document.getElementById("newPassword");
         copyPass.select();

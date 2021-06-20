@@ -1,20 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 body {
     background-color:#121212;
     color: #DCDDDC ;
     text-align: center;
 }
 
+
 #principalDiv {
     background-color: #1E1F1F;
-    max-width: 500px;
-    text-align: center;
-    border-radius: 50px;
-    box-sizing: border-box;
-    margin: auto;
+    border-radius: 20px;
+    padding: 10px;
+    max-width: 400px;
+    max-height: 400px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+input[type="radio"] {
+    margin-right: 20px;
 }
 
-ul, #suasSenhasButton{
-    color: #ba86fd;
+input{
+    margin-bottom: 20px;
+}
+
+h1, h2, p{
+    margin: 25px;
 }
 
 #newPassButton, #clean, #copy{
@@ -35,4 +53,9 @@ ul, #suasSenhasButton{
     border: 0;
     padding: 7px;    
     text-align: center;
+}
+
+#newPassButton:hover, #clean:hover, #copy:hover{
+    color: #ba86fd;
+    font-weight: bolder;
 }

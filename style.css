@@ -1,0 +1,38 @@
+body {
+    background-color:#121212;
+    color: #DCDDDC ;
+    text-align: center;
+}
+
+#principalDiv {
+    background-color: #1E1F1F;
+    max-width: 500px;
+    text-align: center;
+    border-radius: 50px;
+    box-sizing: border-box;
+    margin: auto;
+}
+
+ul, #suasSenhasButton{
+    color: #ba86fd;
+}
+
+#newPassButton, #clean, #copy{
+    background-color:#121212;
+    color: #DCDDDC ;
+    border-radius: 50px;
+    border: 0;
+    padding: 7px;
+    margin: 5px;
+    width: 120px;
+    text-align: center;
+}
+
+#newPassword{
+    background-color:#121212;
+    color: #DCDDDC;
+    border-radius: 50px;
+    border: 0;
+    padding: 7px;    
+    text-align: center;
+}

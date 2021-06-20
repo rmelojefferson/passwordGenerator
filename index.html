@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
     <title>Password Generator</title>
 </head>
 <body>
-    <div>
+    <div id="principalDiv">
         <h1>Password Generator</h1>
         
         <h2>Quantos caracteres?</h2>
@@ -18,14 +19,17 @@
             <label>16 caracteres</label>
             <input type="radio" class="passwordLength" name="passwordLength">
         </form>
-        
-        <p id="newPassword">Clique no botão para gerar uma nova senha:</p>
+        <input id="newPassword" type="text" placeholder="Nova senha">
+        <input id="copy" type="button" value="Copiar">
+        <p>Clique no botão para gerar uma nova senha:</p>
         
         <input id="newPassButton" type="button" value="Gerar senha">
-    
-        <p>Suas senhas:</p>
-        <ul id="generatedPass"></ul> <!--Quando clicar no botão, alterar para "Suas senhas:"-->
+        <input id="clean" type="button" value="Limpar senhas">
+
+        <p id="suasSenhasButton"></p>
+        <ul id="generatedPass"></ul>
     </div>
+        
     <script src="./passwordGenerator.js"></script>
 </body>
 </html>

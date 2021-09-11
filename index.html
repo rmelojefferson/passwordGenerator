@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="./css/style.css">
+		<title>passwordGenerator</title>
+	</head>
+	<body>
+		<div class='divCentralize'>
+			<div class='divContent'>
+				<img src="./img/passwordImage.svg" alt="security on">
+			
+				<h1>passwordGenerator</h1>
+			
+				<h2>Password Length:</h2>
+				
+				<input type="radio" id="passwordLength8" name="passwordLength">
+				<label for="passwordLength8">8</label>
+
+				<input type="radio" id="passwordLength16" name="passwordLength" checked>
+				<label for="passwordLength16">16</label>
+
+				<input type="radio" id="passwordLength32"name="passwordLength">	
+				<label for="passwordLength32">32</label>
+				
+				<p><input type="text" placeholder="New password" id="newPassword"></p>
+			
+				<p><input type="button" value="Generate Password" id="btGeneratePassword"></p>
+			
+				<p><strong>Auto copy to clipboard when you click</strong></p>
+			</div>
+		</div>
+		<script src="./js/passwordGenerator.js"></script>
+	</body>
+</html>

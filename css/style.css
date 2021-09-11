@@ -1,0 +1,57 @@
+body {
+	margin: 0;
+	padding:0;
+	background-color: #282A36;
+	color: #FF79FA;
+}
+
+.divCentralize {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.divContent label, .divContent input {
+  font-family: Serif;
+  cursor: pointer;
+}
+
+.divContent {
+	text-align: center;
+}
+
+#newPassword {
+	text-align: center;
+	width: 320px;
+	height: 20px;
+	font-family: Serif;
+	font-size: 16px;
+	border-radius: 40px;
+	padding: 3px;
+	border-style: none;
+}
+img {
+	width: 250px;
+	height: 200px;
+}
+
+#btGeneratePassword {
+	background-color: #6C63FF;
+	border-radius: 20px;
+	font-family: Serif;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 5px;
+	margin: 10px;
+	width: 150px;
+	height: 35px;
+	border-style: none;
+	color: white;
+}
+
+#btGeneratePassword:hover {
+	font-size: 17px;
+	color: #FF79FA;
+	cursor: pointer;
+}

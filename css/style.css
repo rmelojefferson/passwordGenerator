@@ -40,18 +40,17 @@ img {
 	background-color: #6C63FF;
 	border-radius: 20px;
 	font-family: Serif;
-	font-size: 16px;
 	font-weight: bold;
 	padding: 5px;
 	margin: 10px;
-	width: 150px;
+	width: 180px;
 	height: 35px;
 	border-style: none;
 	color: white;
 }
 
 #btGeneratePassword:hover {
-	font-size: 17px;
+	border: 2px solid;
 	color: #FF79FA;
 	cursor: pointer;
 }

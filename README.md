@@ -1,7 +1,7 @@
 # passwordGenerator
 
-Strong random passwords
+### Strong random passwords
 
-[passwordGenerator](https://rmelojefferson.github.io/passwordGenerator/ "Password Generator")
+### [passwordGenerator](https://rmelojefferson.github.io/passwordGenerator/ "Password Generator")
 
 ![randomPassword](./img/randomPassword.gif)

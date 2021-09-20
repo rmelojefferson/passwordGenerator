@@ -1,6 +1,7 @@
-# Password Generator
+# passwordGenerator
 
-8 or 16 characters random password!
+Strong random passwords
 
-[Password Generator](https://rmelojefferson.github.io/passwordGenerator/ "Password Generator")
+[passwordGenerator](https://rmelojefferson.github.io/passwordGenerator/ "Password Generator")
 
+![randomPassword](./img/randomPassword.gif)
